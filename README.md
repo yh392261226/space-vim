@@ -47,7 +47,7 @@
 
 space-vim is a vim distribution for vim plugins and resources, compatible with Vim and NeoVim.
 
-It is inspired by [spacemacs](https://github.com/syl20bnr/spacemacs) and mimics spacemacs in a high level, especially in the whole architecture, key bindings and GUI. if have ever tried spacemacs, you will find space-vim is very similar to it in user experience.
+It is inspired by [spacemacs](https://github.com/syl20bnr/spacemacs) and mimics spacemacs in a high level, especially in the whole architecture, key bindings and UI. if have ever tried spacemacs, you will find space-vim is very similar to it in user experience.
 
 Elegance here means pleasing, graceful as well as simple. If you are unfamiliar with spacemacs, you can visit [spacemacs.org](http://spacemacs.org/doc/DOCUMENTATION.html) for more about the priciple behind that, which is also what space-vim seeks.
 
@@ -91,23 +91,16 @@ You have to satisfy some prerequisites at first:
 
 ### Linux and macOS
 
-- curl
+```sh
+# Install space-vim for both Vim and NeoVim
+curl -fLo https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh | sh -s -- all
 
-    ```sh
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh)"
-    ```
+# Only install space-vim for Vim
+curl -fLo https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh | sh -s -- vim
 
-- wget
-
-    ```sh
-    sh -c "$(wget -qO- https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh)"
-    ```
-
-    :warning: For neovim, after the quick installer is done, you still need to create a symlink:
-
-    ```sh
-    ln -s ~/.space-vim/init.vim ~/.config/nvim/init.vim
-    ```
+# Only install space-vim for NeoVim
+curl -fLo https://raw.githubusercontent.com/liuchengxu/space-vim/master/install.sh | sh -s -- neovim
+```
 
 ### Windows
 
@@ -235,7 +228,7 @@ If you want to know more about the bootstrap of space-vim, please see [bootstrap
 For the sake of a better user experience, some extra settings should be done.
 
 #### Enable GUI color in terminal vim
-`echo has('termguicolors')`, if `1`, then you can enable GUI color in terminal vim, add this to `UserConfig()`:
+`:echo has('termguicolors')`, if `1`, then you can enable GUI color in terminal vim, add this to `UserConfig()`:
 
 ```vim
 set termguicolors
