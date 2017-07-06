@@ -1,0 +1,1 @@
+/Users/json/.runtime/public/haya14busa_incsearch-easymotion.vim

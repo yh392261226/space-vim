@@ -1,0 +1,11 @@
+#!/bin/bash
+CURVIMPATH=$(cd `dirname $0`; pwd) #当前配置文件地址
+if [ -f $HOME/.vim ] || [ -d $HOME/.vim ]; then
+	rm -rf $HOME/.vim
+fi
+if [ -f $HOME/.space-vim ] || [ -d $HOME/.space-vim ]; then
+	rm -rf $HOME/.space-vim
+fi
+
+ln -sf $CURVIMPATH $HOME/.vim
+ln -sf $CURVIMPATH $HOME/.space-vim

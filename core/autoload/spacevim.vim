@@ -12,7 +12,7 @@ let g:spacevim_excluded = []
 let g:spacevim_plugins = []
 let g:plug_options = {}
 
-let s:dot_spacevim = $HOME.'/.spacevim'
+let s:dot_spacevim = $HOME.'/.vim/.spacevim'
 let s:py_exe = has('python') ? 'python' : 'python3'
 let s:TYPE = {
 \ 'string':  type(''),

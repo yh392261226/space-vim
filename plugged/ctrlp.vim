@@ -1,0 +1,1 @@
+/Users/json/.runtime/public/ctrlpvim_ctrlp.vim

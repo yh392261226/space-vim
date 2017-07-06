@@ -1,0 +1,40 @@
+function! Layers()
+      Layer 'fzf'
+      Layer 'file-manager'
+      Layer 'unite'
+      Layer 'better-defaults'
+      Layer 'emoji'
+      Layer 'goyo'
+
+      Layer 'html'
+      Layer 'c-c++'
+      Layer 'python'
+      Layer 'markdown'
+      Layer 'graphviz'
+      Layer 'php'
+      Layer 'go'
+      Layer 'javascript'
+      Layer 'erlang'
+      Layer 'chinese'
+
+      Layer 'text-align'
+      Layer 'programming'
+      Layer 'git'
+      Layer 'github'
+
+      Layer 'ycmd'
+      Layer 'auto-completion'
+      Layer 'syntax-checking'
+
+      Layer 'ctrlp'
+      Layer 'better-motion'
+      Layer 'easy-motion'
+  endfunction
+
+  function! UserInit()
+  endfunction
+
+  function! UserConfig()
+    colorscheme space-vim-dark
+    hi Comment cterm=italic
+  endfunction
